@@ -149,10 +149,15 @@ app.get("/about",function(req,res){
   res.render("about");
 });
 
-//adding another router(work)
+
+//heroku listening port
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3000;
+}
 
 
 //listening on port and starting server
-app.listen(3000,function(){
-  console.log("server is working fine.");
+app.listen(port,function(){
+  console.log("server has started on port 3000");
 });
