@@ -17,7 +17,7 @@ app.use(express.static("public"));
 // let item = "";
 
 //creating database with mongoose
-mongoose.connect("mongodb+srv://admin-abhi:Abhi@8151@cluster0.1dcnz.mongodb.net/todolistDB",{useNewUrlParser: true},{useUnifiedTopplogy: true});
+mongoose.connect("mongodb+srv://admin-abhi:Abhi@8151@cluster0.1dcnz.mongodb.net/todolistDB",{useNewUrlParser: true ,useUnifiedTopology: true});
 
 //creating mongoose schema
 const itemsSchema = {
